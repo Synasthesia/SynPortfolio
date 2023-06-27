@@ -1,0 +1,71 @@
+html {
+	scroll-snap-type: mandatory;
+	overflow-y: scroll;
+}
+main {
+	display: flex;
+	overflow-y: scroll;
+	scroll-snap-align: center;
+	scroll-behavior: smooth;
+}
+.sidebar {
+	height: 100%;
+	width: 100px;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding-top: 40px;
+}
+.sidebar nav {
+	height: 100%;
+	width: 100%;
+	position: fixed;
+	left: 0;
+	top: 0;
+	padding: 8px;
+	padding-top: 40px;
+	font-size: 32px;
+	display: block;
+}
+.sidebar nav ul {
+	list-style-type: none;
+}
+.sidebar nav ul li {
+	color: blueviolet;
+	align-items: center;
+}
+.main {
+	display: flex;
+}
+.coverUpper {
+	display: flex;
+}
+.coverText {
+	display: flex;
+	height: 250px;
+	color: blueviolet;
+}
+.portrait img {
+	position: relative;
+	justify-content: right;
+	display: flex;
+	height: 250px;
+}
+.coverMiddle {
+	display: flex;
+}
+.knowledgeLeft {
+	display: flex;
+}
+.knowledgeLeft img {
+	height: 4%;
+}
+.knowledgeMid {
+	justify-content: center;
+}
+.knowledgeRight {
+	display: flex;
+}
+.coverLower {
+	display: flex;
+}
