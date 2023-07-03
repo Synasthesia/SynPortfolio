@@ -20,7 +20,7 @@ header {
 
 header h1 {
 	margin: 0;
-	font-size: 34px;
+	font-size: 55px;
 }
 
 header h1 span {
@@ -39,18 +39,24 @@ header nav ul {
 
 header nav ul li {
 	margin-left: 30px;
-	font-size: 24px;
+	font-size: 30px;
 }
 
 header nav ul li a {
 	text-decoration: none;
 	color: blueviolet;
 }
+header nav ul li a:hover:before {
+	content: '>>';
+}
+header nav ul li a:hover:after {
+	content: '<<';
+}
 
 main {
 	display: grid;
-	grid-template-rows: auto auto;
-	grid-template-columns: repear(3, 1fr);
+	grid-template-rows: 1fr, 1fr, 1fr;
+	grid-template-columns: 1fr, 1fr, 1fr;
 	gap: 10px;
 	margin-top: 75px; /* Add margin to create space below the fixed header, else content will spill into fixed header */
 }
@@ -67,7 +73,7 @@ main {
 	flex-grow: 1;
 	color: blueviolet;
 	text-align: center;
-	margin-right: 250px;
+	margin-right: 150px;
 	max-width: 250px;
 	white-space: pre;
 }
@@ -81,22 +87,93 @@ main {
 	margin-right: 100px;
 	border-radius: 50%;
 }
-.front-end-container {
+.main-middle-container {
+	margin-left: 30vw;
 	display: grid;
-	grid-template-columns: 80px 80px 80px;
-	gap: 10px;
+	max-width: 750px;
+	grid-template-columns: 250px, 250px, 250px;
+	grid-template-rows: 150px 150px 150px;
+	gap: 15px;
+}
+.front-end-container {
+	grid-area: 1/1/2/2;
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: auto auto;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+}
+.middle-container {
+	grid-area: 4/1/1/4;
+}
+.back-end-container {
+	grid-area: 3/3/4/4;
+	display: grid;
+	grid-template-rows: auto auto;
+	align-items: center;
+	justify-items: center;
+	text-align: center;
+}
+.front-end-container #html-logo {
+	grid-column: 1;
+	grid-row: 2;
+}
+.front-end-container #css-logo {
+	grid-column: 2;
+	grid-row: 2;
+}
+.front-end-container #js-logo {
+	grid-column: 3;
+	grid-row: 2;
 }
 .front-end-container img,
 .back-end-container img {
 	width: 75px;
 	height: 75px;
+	justify-self: center;
 }
 .middle-container img {
-	width: 500px;
-	height: 400px;
+	height: 450px;
+}
+.back-end-container img {
+	grid-column: 2;
 }
 .front-end-container .title,
 .back-end-container .title {
 	font-weight: bold;
+	font-size: 24px;
+	letter-spacing: 2px;
 	margin-bottom: 5px;
+	justify-content: center;
+	grid-row: 1;
+	grid-column: 2;
+	color: blueviolet;
+}
+footer {
+	width: 85vw;
+	font-weight: bolder;
+	letter-spacing: 2px;
+	color: blueviolet;
+	text-align: center;
+	margin-bottom: 50px;
+	margin-left: 125px;
+}
+footer span {
+	margin-left: 10px;
+	writing-mode: vertical-lr;
+}
+.projects {
+	display: grid;
+	max-width: 95vw;
+	grid-template-columns: 1fr 1fr;
+	color: blueviolet;
+	word-wrap: normal;
+}
+.projects img {
+	grid-column: 1;
+}
+.projects article p {
+	grid-column: 2;
+	color: blueviolet;
 }

@@ -15,13 +15,15 @@
 			<h1>Port<span>folio</span></h1>
 			<nav>
 				<ul>
-					<li><a href="#">About</a></li>
-					<li><a href="#">Projects</a></li>
-					<li><a href="#">Contact</a></li>
+					<li><a href="#about">About</a></li>
+					<li>
+						<a href="#projects">Projects</a>
+					</li>
+					<li><a href="#contact">Contact</a></li>
 				</ul>
 			</nav>
 		</header>
-		<main>
+		<main id="about">
 			<div class="main-top-container">
 				<div class="main-headshot-text">
 					Hello, I'm Matt. <span>Full-Stack developer.</span>
@@ -33,9 +35,9 @@
 			<div class="main-middle-container">
 				<div class="front-end-container">
 					<h3 class="title">Front End</h3>
-					<img src="./images/html5.png" />
-					<img src="./images/css.png" />
-					<img src="./images/javascript.png" />
+					<img id="html-logo" src="./images/html5.png" />
+					<img id="css-logo" src="./images/css.png" />
+					<img id="js-logo" src="./images/javascript.png" />
 				</div>
 				<div class="middle-container">
 					<img src="./images/code_slice.png" />
@@ -45,6 +47,19 @@
 					<img src="./images/csharp.png" />
 				</div>
 			</div>
+			<footer>Learn More <br /><span>--&#62;</span></footer>
 		</main>
+		<article class="projects" id="projects">
+			<article class="virtual-pet">
+				<a href="https://github.com/WeCanCodeIT/virtual-pet-project-dumb-dumber"
+					><img src="./images/vpetconsole.png" alt="Virtual Pet console image"
+				/></a>
+				<h2>Virtual Pet</h2>
+				<p>
+					Console project that allows the user to create, ineract, and store
+					pets within a virtual shelter. Great OOP practice while learning C#.
+				</p>
+			</article>
+		</article>
 	</body>
 </html>
