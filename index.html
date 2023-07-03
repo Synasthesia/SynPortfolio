@@ -4,47 +4,45 @@
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
 		<link rel="stylesheet" type="text/css" href="site.css" />
+		<link
+			rel="stylesheet"
+			href="https://fonts.googleapis.com/css?family=Josefin+Sans"
+		/>
 		<title>Matt Elder Portfolio</title>
 	</head>
 	<body>
+		<header>
+			<h1>Port<span>folio</span></h1>
+			<nav>
+				<ul>
+					<li><a href="#">About</a></li>
+					<li><a href="#">Projects</a></li>
+					<li><a href="#">Contact</a></li>
+				</ul>
+			</nav>
+		</header>
 		<main>
-			<div class="sidebar">
-				<nav>
-					<div href="#about">About</div>
-					<div id="projects">Projects</div>
-					<div id="contact">Contact</div>
-				</nav>
+			<div class="main-top-container">
+				<div class="main-headshot-text">
+					Hello, I'm Matt. <span>Full-Stack developer.</span>
+				</div>
+				<div class="main-headshot">
+					<img src="./images/headshot.jpg" alt="Image of Matthew" />
+				</div>
 			</div>
-			<div class="main">
-				<div class="coverUpper">
-					<div class="portrait"><img src="images/headshot.jp" /></div>
-					<div class="coverText">
-						Lorem ipsum dolor sit amet consectetur adipisicing elit.
-						Necessitatibus modi adipisci perspiciatis exercitationem ipsum hic
-						molestiae iste repudiandae dolores officiis mollitia illum nostrum
-						incidunt eveniet ex amet accusantium distinctio ipsam eum recusandae
-						nisi totam expedita, pariatur temporibus. Quisquam temporibus
-						pariatur nam veritatis velit molestiae cumque? &rightarrow;
-					</div>
+			<div class="main-middle-container">
+				<div class="front-end-container">
+					<h3 class="title">Front End</h3>
+					<img src="./images/html5.png" />
+					<img src="./images/css.png" />
+					<img src="./images/javascript.png" />
 				</div>
-				<div class="coverMiddle">
-					<div class="knowledgeLeft">
-						<img src="images/html5.png" />
-						<img src="images/css.png" />
-						<img src="images/javascript.png" />
-					</div>
-					<div class="knowledgeMid"><img src="images/code_slice.png" /></div>
-					<div class="knowledgeRight">
-						<img src="images/csharp.png" />
-					</div>
+				<div class="middle-container">
+					<img src="./images/code_slice.png" />
 				</div>
-				<div class="coverLower">
-					<div>Scroll Down &rightarrow;</div>
-					<!--Add an arrow somehow to this too!-->
-					<div>Learn More</div>
-					<!--Add an arrow somehow to this too!-->
-					<div>Scroll Down</div>
-					<!--Add an arrow somehow to this too!-->
+				<div class="back-end-container">
+					<h3 class="title">Back End</h3>
+					<img src="./images/csharp.png" />
 				</div>
 			</div>
 		</main>

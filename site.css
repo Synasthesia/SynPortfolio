@@ -1,71 +1,102 @@
 html {
-	scroll-snap-type: mandatory;
-	overflow-y: scroll;
+	background-color: black;
 }
-main {
-	display: flex;
-	overflow-y: scroll;
-	scroll-snap-align: center;
-	scroll-behavior: smooth;
+body {
+	margin: 0;
+	padding: 0;
+	font-family: 'Josefin Sans', sans-serif;
 }
-.sidebar {
-	height: 100%;
-	width: 100px;
+
+header {
+	color: blueviolet;
 	position: fixed;
-	left: 0;
 	top: 0;
-	padding-top: 40px;
-}
-.sidebar nav {
-	height: 100%;
+	left: 0;
 	width: 100%;
-	position: fixed;
-	left: 0;
-	top: 0;
-	padding: 8px;
-	padding-top: 40px;
-	font-size: 32px;
-	display: block;
-}
-.sidebar nav ul {
-	list-style-type: none;
-}
-.sidebar nav ul li {
-	color: blueviolet;
+	display: flex;
 	align-items: center;
+	padding: 10px 15px;
 }
-.main {
-	display: flex;
+
+header h1 {
+	margin: 0;
+	font-size: 34px;
 }
-.coverUpper {
-	display: flex;
+
+header h1 span {
+	color: aqua;
 }
-.coverText {
+header nav {
+	flex-grow: 1;
+}
+header nav ul {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
 	display: flex;
-	height: 250px;
+	justify-content: space-evenly;
+}
+
+header nav ul li {
+	margin-left: 30px;
+	font-size: 24px;
+}
+
+header nav ul li a {
+	text-decoration: none;
 	color: blueviolet;
 }
-.portrait img {
-	position: relative;
-	justify-content: right;
+
+main {
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: repear(3, 1fr);
+	gap: 10px;
+	margin-top: 75px; /* Add margin to create space below the fixed header, else content will spill into fixed header */
+}
+.main-top-container {
 	display: flex;
+	align-items: center;
+	justify-content: flex-end;
+}
+.main-headshot {
+	display: flex;
+	justify-content: flex-end;
+}
+.main-headshot-text {
+	flex-grow: 1;
+	color: blueviolet;
+	text-align: center;
+	margin-right: 250px;
+	max-width: 250px;
+	white-space: pre;
+}
+.main-headshot-text span {
+	display: block;
+	text-indent: 200px;
+	padding-left: 20px;
+}
+.main-headshot img {
 	height: 250px;
+	margin-right: 100px;
+	border-radius: 50%;
 }
-.coverMiddle {
-	display: flex;
+.front-end-container {
+	display: grid;
+	grid-template-columns: 80px 80px 80px;
+	gap: 10px;
 }
-.knowledgeLeft {
-	display: flex;
+.front-end-container img,
+.back-end-container img {
+	width: 75px;
+	height: 75px;
 }
-.knowledgeLeft img {
-	height: 4%;
+.middle-container img {
+	width: 500px;
+	height: 400px;
 }
-.knowledgeMid {
-	justify-content: center;
-}
-.knowledgeRight {
-	display: flex;
-}
-.coverLower {
-	display: flex;
+.front-end-container .title,
+.back-end-container .title {
+	font-weight: bold;
+	margin-bottom: 5px;
 }
