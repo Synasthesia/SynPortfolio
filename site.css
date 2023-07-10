@@ -1,5 +1,5 @@
 html {
-	background-color: black;
+	/* background-color: black; */
 	scroll-snap-type: y mandatory;
 	overflow-y: scroll;
 	scroll-behavior: smooth;
